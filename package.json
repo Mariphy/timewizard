@@ -2,7 +2,10 @@
   "name": "npm-package-test",
   "version": "1.0.0",
   "description": "A test package for TypeScript",
-  "keywords": ["test", "typescript"],
+  "keywords": [
+    "test",
+    "typescript"
+  ],
   "homepage": "https://github.com/Mariphy/npm_package",
   "bugs": {
     "url": "https://github.com/Mariphy/npm_package/issues"
@@ -13,7 +16,12 @@
     "url": "git+https://github.com/Mariphy/npm_package.git"
   },
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "type": "module",
-  "main": "dist/index.js"
+  "main": "dist/index.js",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
 }
