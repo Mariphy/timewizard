@@ -1,0 +1,18 @@
+{
+  "name": "npm-package-test",
+  "version": "1.0.0",
+  "description": "A test package for TypeScript",
+  "keywords": ["test", "typescript"],
+  "homepage": "https://github.com/Mariphy/npm_package",
+  "bugs": {
+    "url": "https://github.com/Mariphy/npm_package/issues"
+  },
+  "author": "Mariphy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mariphy/npm_package.git"
+  },
+  "files": ["dist"],
+  "type": "module",
+  "main": "dist/index.js"
+}
