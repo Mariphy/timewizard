@@ -1,27 +1,38 @@
 {
-  "name": "npm-package-test",
-  "version": "1.0.0",
-  "description": "A test package for TypeScript",
-  "keywords": [
-    "test",
-    "typescript"
-  ],
-  "homepage": "https://github.com/Mariphy/npm_package",
-  "bugs": {
-    "url": "https://github.com/Mariphy/npm_package/issues"
-  },
-  "author": "Mariphy",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mariphy/npm_package.git"
-  },
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "type": "module",
-  "main": "dist/index.js",
-  "devDependencies": {
-    "typescript": "^5.9.2"
-  }
+	"name": "npm-package-test",
+	"version": "1.0.0",
+	"description": "A test package for TypeScript",
+	"keywords": [
+		"test",
+		"typescript"
+	],
+	"homepage": "https://github.com/Mariphy/npm_package",
+	"bugs": {
+		"url": "https://github.com/Mariphy/npm_package/issues"
+	},
+	"author": "Mariphy",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mariphy/npm_package.git"
+	},
+	"license": "MIT",
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"main": "dist/index.js",
+	"devDependencies": {
+		"@biomejs/biome": "2.2.2",
+		"typescript": "^5.9.2",
+		"vitest": "^3.2.4"
+	},
+	"scripts": {
+		"build": "tsc",
+		"ci": "npm run build && npm run test",
+		"check": "biome check .",
+		"format": "biome format . --write .",
+		"lint": "biome lint .",
+		"test": "vitest run",
+		"dev": "vitest"
+	}
 }
